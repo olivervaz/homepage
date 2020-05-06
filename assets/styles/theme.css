@@ -1,9 +1,52 @@
 *{
   outline: none;
-  transition: .1s;
+}
+
+body{
+  background: orange url("../images/tiger-print.svg");
+  background-size: cover;
+}
+header,main{
+  background: transparent;
 }
 
 img {
   width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 1em orange);
 }
 
+time{
+  color: orange;
+  font-size: 1.25rem;
+}
+
+li{
+  padding: .5em 0;
+}
+
+.timeline > li{
+  border-bottom:  .1em solid orange;
+}
+
+ul>li::before{
+  content: "\1F981";
+  line-height: 1.5;
+}
+
+summary::-webkit-details-marker{
+  display: none;
+}
+
+summary{
+  padding: 1rem;
+}
+
+summary::before{
+  content: '\1F405';
+  padding-right: .4em ;
+}
+
+details[open] summary::before{
+  content: '\1F42F';
+}
