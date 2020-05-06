@@ -1,0 +1,46 @@
+.record{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 1em;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+          rgb(0, 0, 0),
+          rgb(15, 15, 15) .1em,
+          rgb(30, 30, 30) .4em
+  );
+
+}
+
+.record-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: .1em solid orange;
+  background-color: orange;
+  box-shadow: -.4em .4em .3em 0 rgba(0, 0, 0, 0.3);
+}
+
+.record-cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background: lightgray;
+  box-shadow: -.25em .25em .1em 0 darkgray,
+              inset -.2em .2em .2em -.2em white;
+}
