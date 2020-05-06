@@ -17,7 +17,6 @@ img {
 }
 
 time{
-  color: orange;
   font-size: 1.25rem;
 }
 
@@ -26,7 +25,7 @@ li{
 }
 
 .timeline > li{
-  border-bottom:  .1em solid orange;
+  border-bottom:  .1em solid darkorange;
 }
 
 ul>li::before{
